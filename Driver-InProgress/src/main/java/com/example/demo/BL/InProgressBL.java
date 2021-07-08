@@ -51,6 +51,12 @@ public class InProgressBL {
 		// TODO Auto-generated method stub
 		return this.inprogressDl.updateTrip(tripCabID);
 	}
+
+	//For getting server time-startTime
+	public TripCabInfo getBookingTime(long tripCabID) {
+		// TODO Auto-generated method stub
+		return this.inprogressDl.getBookingTime(tripCabID);
+	}
 	
 }
 

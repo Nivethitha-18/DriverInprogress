@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -91,6 +92,14 @@ public class InProgressController {
 		    	 
 			return ResponseEntity.status(HttpStatus.OK).body(savedStatus);
 		     }
+		 
+		 //For getting server time-startTime
+		 @GetMapping("getServerTime/{tripCabID}")
+		 public TripCabInfo getBookingTime(@PathVariable("tripCabID") long tripCabID)
+			{
+				return this.inprogressBl.getBookingTime(tripCabID);
+				
+			}
 
 	    
 }

@@ -40,6 +40,8 @@ public class DriverInProgressApplication {
 			@Override
 			public void run(String... args) throws Exception {
 			
+				//Not needed during integerating, only for inprogress screen testing
+				
 				//employee details--beg
 				BookingRequest employeedetails = new BookingRequest(1,2034,"Nive","Alphacity","Tambaram","Bharath university",LocalDateTime.now(),LocalTime.of(10, 30),0,1050,null,null,null,null,"show",null,null,null,null,0);
 				this.bookingRepo.save(employeedetails);
@@ -70,7 +72,7 @@ public class DriverInProgressApplication {
 				
 				
 				//tripdetails--beg
-				TripCabInfo tripdetails = new TripCabInfo(1050,"TN57 NS1000",10,"Bayline","Tambaram","Shollingnalur",LocalDate.now(),LocalDateTime.now(),10,2,8,LocalTime.of(10, 30),null,null,null,null,null,null,0);
+				TripCabInfo tripdetails = new TripCabInfo(1050,"TN57 NS1000",10,"Bayline","Tambaram","Shollingnalur",LocalDate.now(),LocalDateTime.now(),10,2,8,LocalTime.of(10, 35),null,null,null,null,null,null,0);
                 this.tripRepo.save(tripdetails);
                 //tripdetails--end
 			}

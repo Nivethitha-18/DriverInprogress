@@ -66,4 +66,11 @@ public class InProgressDL {
 		return tripRepo.save(status);
 	}
 
+	//For getting server time-startTime
+	public TripCabInfo getBookingTime(long tripCabID) {
+		// TODO Auto-generated method stub
+		Optional<TripCabInfo> save= tripRepo.findById(tripCabID);
+		return save.get();
+	}
+
 }
