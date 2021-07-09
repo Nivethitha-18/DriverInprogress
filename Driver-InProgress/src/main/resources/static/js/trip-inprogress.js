@@ -14,7 +14,7 @@ var show = "show";
 var noshow ="noshow";
 var arr;
 var startTime;
-
+//onload function
 function screenOnLoadCalls(){
 	
 	getServerTime();

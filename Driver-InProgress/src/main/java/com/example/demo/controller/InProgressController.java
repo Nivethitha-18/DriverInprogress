@@ -93,7 +93,7 @@ public class InProgressController {
 			return ResponseEntity.status(HttpStatus.OK).body(savedStatus);
 		     }
 		 
-		 //For getting server time-startTime
+	//For getting server time-startTime
 		 @GetMapping("getServerTime/{tripCabID}")
 		 public TripCabInfo getBookingTime(@PathVariable("tripCabID") long tripCabID)
 			{
@@ -101,7 +101,7 @@ public class InProgressController {
 				
 			}
 
-	    
+	      
 }
 	
 		
