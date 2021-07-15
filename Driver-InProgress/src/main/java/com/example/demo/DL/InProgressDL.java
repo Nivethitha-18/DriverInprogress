@@ -44,7 +44,7 @@ public class InProgressDL {
 
 	
 	//For storing status of Employee
-	public BookingRequest storeEmployeeStatus(int employeeID,long tripCabID) {
+	public BookingRequest storeEmployeeStatus(String employeeID,long tripCabID) {
 		BookingRequest status= bookingRepo.findByEmployeeId(employeeID, tripCabID);
 		if (status!= null) {
 			status.setStatus("Reached");

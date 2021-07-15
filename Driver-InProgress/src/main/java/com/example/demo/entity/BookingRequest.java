@@ -23,7 +23,7 @@ public class BookingRequest {
 	@Id
 	long bookingId;
 	
-	int employeeId;
+	String employeeId;
 	String employeeName;
 	String source;
 	String destination;

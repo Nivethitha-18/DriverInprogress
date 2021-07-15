@@ -73,7 +73,7 @@ public class InProgressController {
 	
 	//For storing status of Employee
 		@PutMapping(path = "/employee/status/{employeeID}")
-		public ResponseEntity<BookingRequest> storeEmployeeStatus(@PathVariable("employeeID")int employeeID, @Param("tripCabID")long tripCabID)
+		public ResponseEntity<BookingRequest> storeEmployeeStatus(@PathVariable("employeeID")String employeeID, @Param("tripCabID")long tripCabID)
 		{
 			BookingRequest savedStatus = this.inprogressBl.storeEmployeeStatus(employeeID, tripCabID);
 			

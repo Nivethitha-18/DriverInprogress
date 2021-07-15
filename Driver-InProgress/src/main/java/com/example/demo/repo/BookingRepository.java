@@ -20,7 +20,7 @@ public interface BookingRepository extends MongoRepository<BookingRequest, Long>
 
 	//For storing status of Employee
     @Query(value="{employeeId:?0 ,status:show}")
-	BookingRequest findByEmployeeId(int employeeID,long tripCabID);
+	BookingRequest findByEmployeeId(String employeeID,long tripCabID);
 
 	
 	

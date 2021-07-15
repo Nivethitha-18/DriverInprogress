@@ -41,7 +41,7 @@ public class InProgressBL {
 	
 	
   //For storing status of Employee
-	public BookingRequest storeEmployeeStatus(int employeeID, long tripCabID){
+	public BookingRequest storeEmployeeStatus(String employeeID, long tripCabID){
 		
 		return this.inprogressDl.storeEmployeeStatus(employeeID, tripCabID);
 	}
